@@ -5,7 +5,7 @@ require 'pry'
 class Song
   extend Memorable
   extend Findable
-  include Paramable 
+  include Paramable
   attr_accessor :name
   attr_reader :artist
 
@@ -14,7 +14,7 @@ class Song
 
 
   def initialize
-    @@songs << self
+    self.class.all << self
   end
 
 
