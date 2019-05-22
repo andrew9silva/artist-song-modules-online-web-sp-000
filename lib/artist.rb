@@ -10,8 +10,7 @@ class Artist
 
 
 
-  def initialize(name)
-    @name = name
+  def initialize
     @@artists << self
     @songs = []
   end
